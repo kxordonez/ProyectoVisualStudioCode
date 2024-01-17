@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Nuevo usuario</title>
+</head>
+
+<body>
+    <!-- Se crea el formulario -->
+    <!-- Llamar -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <form action="agregarcapitulo.php" method="POST" class="abs-center">
+                <br>
+                <h2>Agregar un Capítulo de Anime</h2>
+                <br>
+                <div class="form-row">
+                    <div class="col-md-12 mb-10">
+                        <label for="validarApellidos">Nombre de Capítulo:<span class="red">*</span></label>
+                        <input type="text" class="form-control" id="nombreCapitulo" name="nombreCapitulo" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-10">
+                        <label for="validarApellidos">Episodio:<span class="red">*</span></label>
+                        <input type="text" class="form-control" id="episodioCapitulo" name="episodioCapitulo" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-10">
+                        <label for="validarApellidos">Imagen de Capítulo:<span class="red">*</span></label>
+                        <input type="text" class="form-control" id="imagenCapitulo" name="imagenCapitulo" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationMensaje">Opción 1:<span class="red">*</span></label>
+                    <textarea class="form-control" id="opcion1" name="opcion1" rows="3" min="25"
+                        required></textarea>
+                </div>
+                <br>
+                <div class="form-group mb-10">
+                    <button class="btn btn-dark" type="submit" name="submit">Agregar Capítulo</button>
+                    <a href="crud.html">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
